@@ -13,13 +13,13 @@
     
 #     return letter_dictionary
 
-# my_word = "peter piper picked a peck of pickled pepprs"
-# # print(letter_counter(my_word))
+my_word = "peter piper picked a peck of pickled pepprs"
+# print(letter_counter(my_word))
 
-# letter_dict = letter_counter(my_word)
+letter_dict = letter_counter(my_word)
 
-# for letter in letter_dict:
-#     print(letter, letter_dict[letter])
+for letter in letter_dict:
+    print(letter, letter_dict[letter])
 # # result...
 # # d = ('p': 9, 'e':???)
 
