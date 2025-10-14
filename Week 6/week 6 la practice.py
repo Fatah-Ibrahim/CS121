@@ -252,23 +252,20 @@
 
 #19
 
-def is_acronym(s, words):
+# def is_acronym(s, words):
 
-    acronyms = ''
+#     acronyms = ''
 
-    for word in words:
-        acronyms += (word[0])
-
-    print(acronyms)
-    print(s)
-    if acronyms == s:
-        return True
-    else:
-        return False
+#     for word in words:
+#         acronyms += (word[0])
+#     if acronyms == s:
+#         return True
+#     else:
+#         return False
 
 
 
-print(is_acronym('abc', ['alice', 'bob', 'charlie']))
+# print(is_acronym('abc', ['alice', 'bob', 'charlie']))
 
 
 

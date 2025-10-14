@@ -216,30 +216,30 @@ print(cone_volume(1,2))
 
 #5 isogram
 
-def is_isogram(word):
-    for i in range(len(word)):
-        for j in range(i +1, len(word)):
-            if word[i] == word[j]:
-                return False
-        return True
+# def is_isogram(word):
+#     for i in range(len(word)):
+#         for j in range(i +1, len(word)):
+#             if word[i] == word[j]:
+#                 return False
+#         return True
             
-print(is_isogram('Tufah'))
+# print(is_isogram('Tufah'))
 
-# 4 hamming distance
+# # 4 hamming distance
 
-def hamming_distance(word, word2):
-    count = 0
-    for i in range(len(word)):
-            if word[i] != word2[i]:
-                count += 1
-    if count == 0:
-        return f'{count}, since all {count} words are the same.'
-    elif count == 1:
-        return f'{count}, since there is only 1 character that is different.'
-    elif count > 1:
-        return f'{count}, since all {count} words are the different.'
+# def hamming_distance(word, word2):
+#     count = 0
+#     for i in range(len(word)):
+#             if word[i] != word2[i]:
+#                 count += 1
+#     if count == 0:
+#         return f'{count}, since all {count} words are the same.'
+#     elif count == 1:
+#         return f'{count}, since there is only 1 character that is different.'
+#     elif count > 1:
+#         return f'{count}, since all {count} words are the different.'
 
-print(hamming_distance('abdce','bcdef'))
+# print(hamming_distance('abdce','bcdef'))
 
 
 

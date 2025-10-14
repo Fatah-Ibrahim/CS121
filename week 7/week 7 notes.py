@@ -13,13 +13,13 @@
     
 #     return letter_dictionary
 
-my_word = "peter piper picked a peck of pickled pepprs"
+#my_word = "peter piper picked a peck of pickled pepprs"
 # print(letter_counter(my_word))
 
-letter_dict = letter_counter(my_word)
+# letter_dict = letter_counter(my_word)
 
-for letter in letter_dict:
-    print(letter, letter_dict[letter])
+# for letter in letter_dict:
+#     print(letter, letter_dict[letter])
 # # result...
 # # d = ('p': 9, 'e':???)
 
@@ -33,10 +33,3 @@ for letter in letter_dict:
 
 
 
-smaller_num = int(input('Enter a number: '))
-larger_num = int(input('Enter a number bigger than the last: '))
-result = []
-for n in range(smaller_num, larger_num + 1):
-         if n % 2 == 0:
-             result.append(n)
-print(result) 
