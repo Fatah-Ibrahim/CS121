@@ -216,16 +216,15 @@
 
 #16
 
-# def like_or_dislike(input):
-#     if input == "dislike":
-#         return 'dislike'
-#     elif input == "like":
-#         return 'like'
-#     else:
-#         return 'nothing'
+def like_or_dislike(input):
+    if input == "dislike":
+        return 'dislike'
+    elif input == "like":
+        return 'like'
+    else:
+        return 'nothing'
     
-# print(like_or_dislike(["dislike","like", 'dislike']))
-
+print(like_or_dislike(["dislike","like", 'dislike']))
 #17
 
 # def get_indices(lyst, target):
