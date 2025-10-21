@@ -31,25 +31,23 @@
 
 #14
 
-def is_two_digit_nums(num):
+# def is_two_digit_nums(num):
     
-    return num >= 10 and num <= 99
+#     return num >= 10 and num <= 99
     
-def report_two_digit_nums(nums_list):
+# def report_two_digit_nums(nums_list):
     
-    result = []
+#     result = []
     
-    for num in nums_list:
-        if is_two_digit_nums(num):
-            result.append(num)
-    return result
-print(report_two_digit_nums([100,22,12,11,3333,3,3]))
+#     for num in nums_list:
+#         if is_two_digit_nums(num):
+#             result.append(num)
+#     return result
+# print(report_two_digit_nums([100,22,12,11,3333,3,3]))
 
 
 
      
-
-
 
 #15
 
