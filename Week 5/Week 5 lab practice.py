@@ -155,11 +155,11 @@ print(cone_volume(1,2))
 
 # def convert_kunts(kunts):
 #    output = ""
-#   # galleon = kunts / 493
+#    galleon = kunts / 493
 #    remaining_kunts = kunts - (galleon * 493)
-#     sickles = remaining_kunts // 29
-#     remaining_kunts = remaining_kunts - (sickles * 29)
-#     if galleon > 0:
+#    sickles = remaining_kunts // 29
+#    remaining_kunts = remaining_kunts - (sickles * 29)
+#    if galleon > 0:
 #        output = output + f"Galleon: {galleon}"
 #    if sickles > 0:
 #        output = output + f"sickles {sickles}"
@@ -167,9 +167,8 @@ print(cone_volume(1,2))
 #        output = output + f"Kunts {remaining_kunts}"
 #    return output
 
-
-#user_input = input("Enter a number of knuts: ")
-    #print(f'for {user_input} knuts I can buy are: {convert_kunts(user_input)}')
+# user_input = input("Enter a number of knuts: ")
+# print(f'for {user_input} knuts I can buy are: {convert_kunts(user_input)}')
 
 #12
 
@@ -240,6 +239,32 @@ print(cone_volume(1,2))
 #         return f'{count}, since all {count} words are the different.'
 
 # print(hamming_distance('abdce','bcdef'))
+
+
+
+#dshbc
+
+# def total_calorie(fruit):
+#     total_cal = 0
+#     calories = {'apple': 95, 'banana': 105, 'orange': 62, 'grape': 3, 'pear': 103}
+
+#     for f in fruit:
+#         total_cal += calories[f]
+#     return total_cal
+# print(total_calorie(['apple', 'banana', 'orange']))
+
+#high earners
+
+def high_earners(employee_salaries, amount):
+
+    result = []
+
+    for employee, salary in employee_salaries.items():
+        if salary > amount:
+            result.append(employee)
+    return result
+
+print(high_earners({'alice': 50000, 'bob': 75000, 'cj': 1000000},60000))
 
 
 
