@@ -362,14 +362,16 @@
 
 #dhshjhd
 
-def total_sales(sales):
+# def total_sales(sales):
 
-    total = 0
-    for item in sales:
-        total += sales[item]
-    return total
+#     total = 0
+#     for item in sales:
+#         total += sales[item]
+#     return total
 
-print(total_sales({'llsas': 5, 'jsdhfjsd': 10, 'dadvd':3}))
+# print(total_sales({'llsas': 5, 'jsdhfjsd': 10, 'dadvd':3}))
+
+
 
     
 

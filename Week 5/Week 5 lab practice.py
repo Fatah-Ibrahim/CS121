@@ -255,16 +255,16 @@ print(cone_volume(1,2))
 
 #high earners
 
-def high_earners(employee_salaries, amount):
+# def high_earners(employee_salaries, amount):
 
-    result = []
+#     result = []
 
-    for employee, salary in employee_salaries.items():
-        if salary > amount:
-            result.append(employee)
-    return result
+#     for employee, salary in employee_salaries.items():
+#         if salary > amount:
+#             result.append(employee)
+#     return result
 
-print(high_earners({'alice': 50000, 'bob': 75000, 'cj': 1000000},60000))
+# print(high_earners({'alice': 50000, 'bob': 75000, 'cj': 1000000},60000))
 
 
 

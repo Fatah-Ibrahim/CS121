@@ -206,8 +206,7 @@
 #     for i in range(1, len(numbers)):
 #         if numbers[i] < numbers[i - 1]:
 #             count += 1
-#         elif numbers[i] == numbers[i - 1]:
-#             count = 0
+#         
 
 #     return count
 
