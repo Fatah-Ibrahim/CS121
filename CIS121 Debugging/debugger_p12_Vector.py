@@ -1,5 +1,7 @@
+import math
+
 class Vector:
-	def __init__(x_direction, y_direction):
+	def __init__(self, x_direction, y_direction):
 		self.x_direction = x_direction
 		self.y_direction = y_direction
 	
@@ -16,4 +18,4 @@ class Vector:
 		self.y_direction = y_direction
 	
 	def get_magnitude(self):
-		return sqrt(self.x_direction**2 + self.y_direction**2)
+		return math.sqrt(self.x_direction**2 + self.y_direction**2)
