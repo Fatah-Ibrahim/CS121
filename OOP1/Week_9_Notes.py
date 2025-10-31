@@ -40,30 +40,46 @@ class Planet:
 Planet1 = Planet('x25',45,198,1000)
 Planet2 = Planet('z37',12,234,2381)
 
-print(Planet1)
-print(Planet2)
-
-# print(Planet1.get_name())
-# Planet1.set_name('Bama')
-# print(Planet1.get_name())
+# print(Planet1)
+# print(Planet2)
 
 
-
-# class Dog:
-#     def __init__(self, _name, _breed, _fur):
-
-#         self.name = _name
-#         self.breed = breed_of_dog()
-#         self.fur = _fur
-        
+class Star:
     
-# dog1 = Dog('Lab')
+    
+    def __init__(self, name):
+        self.name = name
+    def get_name(self):
+        return self.name
+    def set_name(self, new_name):
+        self.name = new_name
+    def __str__(self):
+        msg = ''
+        msg += f'Hello {self.get_name()}. How are you'
+        return msg
+    
+              
+        
+# star1 = Star('Orian')
 
- 
+# print(star1.get_name())
+# print(star1)
+        
 
-# def breed_of_dog():
 
-#     user_input  = input('What breed is your dog: ')
-#     breed = user_input
-#     return breed
-# print(breed_of_dog())
+'''Create a planetary system clss that takes a star as an arguement, has the ability to add 
+planets to the system, can print all the planets the system. 
+'''
+
+class PlanetarySystem: 
+    def __init__(self, _star):
+        self.star = _star
+        self.planets= []
+
+    def add_planet(self, _planet):
+        self.planets.append(_planet)
+
+    def show_planets(self):
+        for planet in self.planets:
+            print(Planet.get_name(planet))
+

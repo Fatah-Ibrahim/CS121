@@ -6,7 +6,10 @@ def like_or_dislike(events):
 			state = event
 		elif event == state:
 			state = 'Nothing'
+		else:
+			state = 'Nothing'
+	
 	return state
 
 
-print(like_or_dislike(['like','dislike','like']))
+print(like_or_dislike(['dislike','dislike']))
