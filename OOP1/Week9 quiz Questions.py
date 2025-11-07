@@ -1,3 +1,5 @@
+import math 
+
 #1 
 class Product:
     def __init__(self, name, price, quantity):
@@ -164,6 +166,8 @@ class Employee:
 
 # print(job.request_raise())
 
+#6
+
 class Student:
 
     def __init__(self, name, major, GPA):
@@ -180,7 +184,7 @@ class Student:
     def get_major(self):
         return self.major
 
-    def set_name(self, major):
+    def set_major(self, major):
         self.major = major
 
     def get_GPA(self):
@@ -195,11 +199,124 @@ class Student:
     def study_for_exam(self):
         self.current_GPA = self.GPA
         if self.GPA < 4.0: 
-            self.new_GPA += 0.2
+            self.GPA += 0.2
         else:
             return f"Reached Maxium GPA"
-        return f"I'm hitting the books! My GPA increased from old {self.current_GPA} to {self.new_GPA}"
+        return f"I'm hitting the books! My GPA increased from old {self.current_GPA} to {self.GPA}"
 
-learner = Student("Fatah", "Computer Science", 3.5)
+# learner = Student("Fatah", "Computer Science", 3.5)
 
-print(learner.study_for_exam())
+# print(learner.study_for_exam())
+
+#7 
+
+class Vehicle:
+    def __init__(self, _make, _model, _year):
+        self.make = _make
+        self.model = _model
+        self.year = _year
+        
+
+    def get_make(self):
+        return self.make
+    
+    def set_make(self, _make):
+        self.make = _make
+    
+    def get_model(self):
+        return self.model
+    
+    def set_model(self, _model):
+        self.model = _model
+
+    def get_year(self):
+        return self.year
+    
+    def set_year(self, _year):
+        self.year = _year
+
+    def print_vehicle_type(self):
+        return f'{self.year} {self.make} {self.model}'
+
+# car = Vehicle('Toyota', 'Camry', '2021')
+
+# print(car.print_vehicle_type())
+
+#8 
+
+class Course:
+    def __init__(self, corse_code, course_name, instructor):
+        self.course_code = corse_code
+        self.course_name = course_name
+        self.instructor = instructor
+
+    def get_corse_code(self):
+        return self.course_code
+    def set_course_code(self, course_code):
+        self.course_code = course_code
+    
+    def get_corse_name(self):
+        return self.course_name
+    def set_course_code(self, course_name):
+        self.course_name = course_name
+    
+    def get_instructor(self):
+        return self.instructor
+    def set_instructor(self, instructor):
+        self.instructor = instructor
+
+    def print_info(self):
+        return f'{self.course_code}: {self.course_name} taught by {self.instructor}'
+    
+# class1 = Course('CIS121', 'Introduction to programming', 'Matt')
+
+# print(class1.print_info())
+
+#9
+
+class Point:
+    def __init__(self, x_coordinate, y_coordinate):
+        self.x_coordinate = x_coordinate
+        self.y_coordinate = y_coordinate
+
+    def get_x_coordinate(self):
+        return self.x_coordinate
+    def set_x_coordinate(self, x_coordinate):
+        self.x_coordinate = x_coordinate
+
+    def get_y_coordinate(self):
+        return self.x_coordinate
+    def set_y_coordinate(self, y_coordinate):
+        self.y_coordinate = y_coordinate
+
+    def print_info(self):
+        return f'(x,y) = ({self.x_coordinate},{self.y_coordinate})'
+    
+# xy = Point(4,5)
+
+# print(xy.print_info())
+
+#10
+class Vector:
+    def __init__(self, x_direction, y_direction):
+        self.x_direction = x_direction
+        self.y_direction = y_direction
+
+    def get_x_direction(self):
+        return self.x_direction
+    def set_x_direction(self, x_direction):
+        self.x_direction = x_direction
+
+    def get_y_direction(self):
+        return self.y_direction
+    def set_y_direction(self, y_direction):
+        self.y_direction = y_direction
+
+    def get_magnitude(self):
+        x = self.x_direction ** 2 + self.y_direction ** 2
+        return math.sqrt(x)
+
+
+# xy = Vector(9,12)
+# print(xy.get_magnitude())
+
