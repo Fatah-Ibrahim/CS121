@@ -157,13 +157,12 @@ class Employee:
         return f" Hello. My name is {self.name}. I'm the {self.title}"
     
     def request_raise(self):
-        self.new_salary = self.salary * 1.06
+        new_salary = self.salary * 1.06
 
-        return f"I'm currently making {self.salary}. I'd like new salary of {self.new_salary}"
+        return f"I'm currently making {self.salary}. I'd like new salary of {new_salary}"
 
 
 # job = Employee('Fatah', 'DSP', 31000)
-
 # print(job.request_raise())
 
 #6
@@ -197,15 +196,14 @@ class Student:
         return f"Hi, I'm {self.name}. I'm studying {self.major}"
     
     def study_for_exam(self):
-        self.current_GPA = self.GPA
+        old_GPA = self.GPA
         if self.GPA < 4.0: 
             self.GPA += 0.2
         else:
             return f"Reached Maxium GPA"
-        return f"I'm hitting the books! My GPA increased from old {self.current_GPA} to {self.GPA}"
+        return f"I'm hitting the books! My GPA increased from old {old_GPA} to {self.GPA}"
 
 # learner = Student("Fatah", "Computer Science", 3.5)
-
 # print(learner.study_for_exam())
 
 #7 
@@ -239,7 +237,6 @@ class Vehicle:
         return f'{self.year} {self.make} {self.model}'
 
 # car = Vehicle('Toyota', 'Camry', '2021')
-
 # print(car.print_vehicle_type())
 
 #8 
@@ -269,7 +266,6 @@ class Course:
         return f'{self.course_code}: {self.course_name} taught by {self.instructor}'
     
 # class1 = Course('CIS121', 'Introduction to programming', 'Matt')
-
 # print(class1.print_info())
 
 #9
@@ -293,7 +289,6 @@ class Point:
         return f'(x,y) = ({self.x_coordinate},{self.y_coordinate})'
     
 # xy = Point(4,5)
-
 # print(xy.print_info())
 
 #10
@@ -320,3 +315,114 @@ class Vector:
 # xy = Vector(9,12)
 # print(xy.get_magnitude())
 
+
+#11
+
+class ColorRGB:
+    def __init__(self, _red, _green, _blue):
+        self.red = _red
+        self.green = _green
+        self.blue = _blue
+
+    def get_red(self):
+        return self.red
+    def set_red(self, _red):
+        self.red = _red
+
+    def get_green(self):
+        return self.green
+    def set_red(self, _green):
+        self.green = _green
+
+    def get_blue(self):
+        return self.blue
+    def set_red(self, _blue):
+        self.blue = _blue
+
+    def to_greyscale(self):
+        greyscale = (0.3 * self.red) + (0.59 * self.green) + (0.11 * self.blue)
+        return greyscale
+    
+# color = ColorRGB(255, 215, 0)
+# print(color.to_greyscale())
+
+    
+#12
+
+class TemperatureInCelsius:
+    def __init__(self, temp_value):
+        self.temp_value = temp_value
+
+    def get_temp_value(self):
+        return self.temp_value
+    def set_temp_value(self, temp_value):
+        self.temp_value = temp_value
+
+    def to_fahrenheit(self):
+        return (self.temp_value * 9/5) + 32
+    
+# temp = TemperatureInCelsius(40)
+# print(temp.to_fahrenheit())
+
+#13 
+
+class Rectangle:
+    def __init__(self, _width, _length):
+        self.width = _width
+        self.length = _length
+
+    def get_width(self):
+        return self.width
+    def set_width(self, _width):
+        self.width = _width
+    
+    def get_length(self):
+        return self._length
+    def set_length(self, _length):
+        self.length = _length
+
+    def calculate_area(self):
+        return self.width * self.length
+    
+# rect = Rectangle(2,2)
+# print(rect.calculate_area())
+
+# 14
+
+class Circle:
+    def __init__(self,radius):
+        self.radius = radius
+
+    def get_radius(self):
+        return self.radius
+    def set_radius(self, radius):
+        self.radius = radius
+
+    def calculate_circumference(self):
+        return 2 * math.pi * self.radius
+    
+# circle = Circle(45)
+# print(circle.calculate_circumference())
+
+#15
+
+class Recipe:
+    def __init__(self, name, cooking_time):
+        self.name = name
+        self.cooking_time = cooking_time
+    
+    def get_name(self):
+        return self.name
+    def set_name(self, name):
+        self.name = name
+    
+    def get_cooking_time(self):
+        return self.cooking_time
+    def set_cooking_time(self, cooking_time):
+        self.cooking_time = cooking_time
+
+    def is_quick_meal(self):
+        return self.cooking_time < 30
+        
+# meal = Recipe('Ramen', 33)
+# print(meal.is_quick_meal())
