@@ -120,11 +120,11 @@ class Song:
     def set_duration_seconds(self, duration_seconds):
         self.duration_seconds = duration_seconds
 
-# song = Song('Something', 'Nba YoungBoy', 168)
+song = Song('Something', 'Nba YoungBoy', 168)
 
-# print(f'Title: {song.get_title()}')
-# print(f'Artist: {song.get_artist()}')
-# print(f'Duration in seconds: {song.get_duration_seconds()}')
+print(f'Title: {song.get_title()}')
+print(f'Artist: {song.get_artist()}')
+print(f'Duration in seconds: {song.get_duration_seconds()}')
 
 #5 
 
@@ -236,8 +236,8 @@ class Vehicle:
     def print_vehicle_type(self):
         return f'{self.year} {self.make} {self.model}'
 
-# car = Vehicle('Toyota', 'Camry', '2021')
-# print(car.print_vehicle_type())
+car = Vehicle('Toyota', 'Camry', '2021')
+print(car.print_vehicle_type())
 
 #8 
 
@@ -343,8 +343,8 @@ class ColorRGB:
         greyscale = (0.3 * self.red) + (0.59 * self.green) + (0.11 * self.blue)
         return greyscale
     
-# color = ColorRGB(255, 215, 0)
-# print(color.to_greyscale())
+color = ColorRGB(255, 215, 0)
+print(color.to_greyscale())
 
     
 #12
