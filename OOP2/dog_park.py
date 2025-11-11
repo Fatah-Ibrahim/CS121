@@ -123,7 +123,8 @@ class BankAccount:
         return self.get_owner() == other.get_owner()
     
     def give_intrest(self):
-        self.balance = self.balance * self.rate
+        self.balance = self.balance + self.balance * self.rate
+
 
 
 
@@ -136,8 +137,11 @@ matt_acc.deposit(50)
 
 ashley_acc = BankAccount('Ashley', 500)
 ashley_acc.deposit(250)
+print(ashley_acc)
+ashley_acc.give_intrest()
+print(ashley_acc)
 
-# print(matt_acc == ashley_acc)
+'''# print(matt_acc == ashley_acc)
 # other_acc = BankAccount('???', 100)
 # print(ashley_acc.get_balance())
 
@@ -145,7 +149,14 @@ ashley_acc.deposit(250)
 # print(joint_acc)
 # new_acc = joint_acc + other_acc
 
-# print(new_acc)
+# print(new_acc)'''
 
+
+
+
+
+print(matt_acc)
+matt_acc.give_intrest()
+print(matt_acc)
 print(matt_acc.rate)
 print(ashley_acc.rate)

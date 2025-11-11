@@ -48,6 +48,8 @@ class Course:
 # class2.add_student(student2)
 # class2.show_student_enrollment()
 
+#2
+
 class Duck:
     def __init__(self, name, color):
         self.name = name
@@ -81,16 +83,17 @@ class Pond:
         return f'{self.name} and there are {len(self.ducks)} ducks'
     
 
-pond1 = Pond("Swamppy")
-duck1 = Duck("Nate", "Yellow")
-duck2 = Duck('Deshaun', 'Green')
-pond1.add_duck(duck1)
-pond1.add_duck(duck2)
-print(pond1)
-pond1.ducks_quacks()
+# pond1 = Pond("Swamppy")
+# duck1 = Duck("Nate", "Yellow")
+# duck2 = Duck('Deshaun', 'Green')
+# pond1.add_duck(duck1)
+# pond1.add_duck(duck2)
+# print(pond1)
+# pond1.ducks_quacks()
         
-            
+#3
 
-    
-            
+class Lion:
+    def __init__(self):
+        pass
     
