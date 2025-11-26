@@ -55,6 +55,8 @@ data = my_file.readlines()
 for line in data[1:]:
     line_data = line.split(',')
     name = line_data[0]
+    if name == 'matt':
+        print('hello matt')
     age = float(line_data[1])
     occupation = line_data[2]
     hobby = line_data[3]
