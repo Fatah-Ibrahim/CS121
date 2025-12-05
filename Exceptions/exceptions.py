@@ -53,6 +53,5 @@ while not done:
     except ZeroDivisionError:
         print("Undefined. \nDon't pick 0")
         user_input = input("your number: ")
-
-
-# eg. 3b
+    except Exception:
+        print('Something went wrong')

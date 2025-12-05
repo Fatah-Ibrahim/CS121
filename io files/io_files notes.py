@@ -37,7 +37,7 @@ for line in data:
 print(f'total = {total}')
 print(f'average = {average}')'''
 
-
+    
 
 new_file = open('family.txt', 'w')
 
